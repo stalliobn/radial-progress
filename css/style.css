@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  padding: 40px;
+}
+circle,
+polyline {
+  fill: none;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.circle-bg {
+  stroke: #eee;
+}
+.circle-color {
+  stroke: #007AFF;
+  stroke-dasharray: 380;
+  stroke-dashoffset: 380;
+}
+.container {
+  margin: 0 auto;
+  font-size: 124px;
+  width: 1em;
+  height: 1em;
+}
+.container svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
