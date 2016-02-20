@@ -12,10 +12,11 @@
   };
 
   function run() {
-    var data = ($(".circle-color").data('progress'));
+    var dataProgress = ($(".circle-color").data('progress')),
+    dataSpeed = ($(".circle-color").data('speed') + 's');
     $container.find("circle.circle-color")
-    .css('stroke-dashoffset', svgStrokeLength)
-    container(data, 2000);
+    .css({'stroke-dashoffset': svgStrokeLength, 'transition': dataSpeed})
+    container(dataProgress, 2000);
   };
   run();
 })(jQuery);
